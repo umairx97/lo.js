@@ -1,5 +1,6 @@
 module.exports = {
-  filterKeys
+  filterKeys,
+  invertObject
 }
 /**
  * @param  {Object} obj - plain js object which keys you want to map through
@@ -10,6 +11,17 @@ function filterKeys (obj = {}, keys = []) {
   const cloned = { ...obj }
   return keys.reduce((acc, item) => {
     acc[item] = cloned[item]
+    return acc
+  }, {})
+}
+
+/**
+ * @param  {Object} obj - plain JS object
+ * @returns {Object} Object {}
+ */
+function invertObject (obj = {}) {
+  return Object.entries(obj).reduce((acc, [key, val]) => {
+    acc[val] = key
     return acc
   }, {})
 }
