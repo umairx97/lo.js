@@ -1,7 +1,11 @@
 {
   "name": "lo.js",
   "version": "1.0.0",
-  "description": "",
+  "description": "a set of utility functions to help me around projects",
+  "keywords": [
+    "module", 
+    "util"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test tape tests/*.js && standard"
@@ -10,7 +14,6 @@
     "type": "git",
     "url": "git+https://github.com/umairx97/lo.js.git"
   },
-  "keywords": [],
   "license": "MIT",
   "author": "umairx97",
   "contributors": [
