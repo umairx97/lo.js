@@ -11,8 +11,15 @@
     "url": "git+https://github.com/umairx97/lo.js.git"
   },
   "keywords": [],
-  "author": "",
   "license": "MIT",
+  "author": "umairx97",
+  "contributors": [
+    {
+      "name": "Umair Ahmed Bajwa",
+      "email": "umairahmedbajwa97@gmail.com",
+      "url": "https://github.com/umairx97/"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/umairx97/lo.js/issues"
   },
