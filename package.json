@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a set of utility functions to help me around projects",
   "keywords": [
-    "module", 
+    "module",
     "util"
   ],
   "main": "index.js",
