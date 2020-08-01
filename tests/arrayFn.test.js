@@ -1,5 +1,5 @@
 const tape = require('tape')
-const { filterReduce } = require('../arrayFn')
+const { filterReduce, rangeArray } = require('../arrayFn')
 
 tape('Fn:(filterReduce)', function (suite) {
   tape('ideal parameters should return expected data', function (t) {
@@ -23,6 +23,18 @@ tape('Fn:(filterReduce)', function (suite) {
     const filterFn = (item) => item.name === 'test'
 
     t.deepEqual(filterReduce(testData, testData, filterFn), expectedOutput, 'should return empty array')
+    t.end()
+  })
+
+  suite.end()
+})
+
+tape('Fn:(rangeArray)', function (suite) {
+  tape('ideal parameters should return expected data', function (t) {
+    const expectedOutput = [0, 1, 2, 3, 4, 5]
+    const testRange = 5
+
+    t.deepEqual(rangeArray(testRange), expectedOutput, 'should create an array with elements ending at 5')
     t.end()
   })
 

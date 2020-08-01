@@ -1,5 +1,6 @@
 module.exports = {
-  filterReduce
+  filterReduce,
+  rangeArray
 }
 
 /**
@@ -16,4 +17,14 @@ function filterReduce (data = [], keys = [], fn = () => {}) {
       return acc
     }, {})
   )
+}
+
+/**
+ * @param {Number} end - the range element where the array should end
+ * @param {Number} start - the starting element of range
+ * @param {Number} step - division steps for each element
+ * @returns {Array} - rangeArray(2) // [0, 1, 2]
+ */
+function rangeArray (end, start = 0, step = 1) {
+  return Array.from({ length: Math.ceil(end - start + 1) / step }, (val, idx) => idx * step + start)
 }
