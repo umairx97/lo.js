@@ -106,3 +106,28 @@ const result = lo.isArray([])
 
 console.log(result) // true
 ```
+---
+**isBeforeDate**```(date1, date2)```
+```javascript
+const lo = require('lo.js')
+
+const BeforeDate = new Date(1997, 8, 2)
+const AfterDate = new Date(1997, 8, 3)
+
+const result = isBeforeDate(BeforeDate, AfterDate)
+
+console.log(result) // true
+```
+
+---
+**isAfterDate**```(date1, date2)```
+```javascript
+const lo = require('lo.js')
+
+const BeforeDate = new Date(1997, 8, 2)
+const AfterDate = new Date(1997, 8, 3)
+
+const result = isBeforeDate(BeforeDate, AfterDate)
+
+console.log(result) // false
+```
